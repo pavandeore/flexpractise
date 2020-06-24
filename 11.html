@@ -1,0 +1,41 @@
+<!-- Responsive image collection -->
+
+<html><head>
+    <title>responsive nav</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container > div > img{
+           height: 200px;
+           width: 100%;
+           object-fit:cover;
+        }
+        .container > div{
+            flex: 1 1 200px;
+        }
+        @media (max-with: 400px) { 
+       .container > div > img{
+           height: 300px;
+           width: 100%;
+           object-fit:cover;
+        }
+        .container > div{
+            flex: 1 1 150px;
+        }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="a"><img src="images/1.jpeg" /></div>
+            <div class="b"><img src="images/2.jpeg" /></div>
+            <div class="c"><img src="images/3.jpeg" /></div>
+            <div class="d"><img src="images/4.jpeg" /></div>
+            <div class="e"><img src="images/5.jpeg" /></div>
+            <div class="f"><img src="images/6.jpeg" /></div>
+            <div class="g"><img src="images/7.jpeg" /></div>
+        </div>
+    </body>
+</html>
